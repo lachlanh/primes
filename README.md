@@ -1,36 +1,26 @@
 # primes
 
-FIXME: description
+Calculate 10 primes and print out a matrix
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Will require you have lein/clojure/java installed
+
+```
+lein uberjar
+```
 
 ## Usage
-
-FIXME: explanation
 
     $ java -jar primes-0.1.0-standalone.jar [args]
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
 ## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 Lachlanh
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
