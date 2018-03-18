@@ -7,7 +7,7 @@ Calculate 10 primes and print out a matrix
 Will require you have lein/clojure/java installed
 
 ```
-lein uberjar
+$ lein uberjar
 ```
 
 ## Usage

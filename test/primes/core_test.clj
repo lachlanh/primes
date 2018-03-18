@@ -2,6 +2,10 @@
   (:require [clojure.test :refer :all]
             [primes.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest is-one-prime
+  (testing "strict prime definition says 2 divisors, 1 is not a prime"
+    (is (not (prime? 1)))))
+
+(deftest is-two-prime
+  (testing "strict prime definition says 2 divisors"
+    (is (prime? 2))))
