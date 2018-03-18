@@ -15,3 +15,9 @@
 (deftest first-ten-primes
   (testing "can we generate the first ten primes"
     (is (= (ten-primes) calculated-ten-primes))))
+
+(def simple-matrix-in (list 1 2))
+(def simple-matrix-out (list (list 1 2) (list 2 4)))
+(deftest create-simple-matrix
+  (testing "can we create a cross product of a 2 element list"
+    (is (= (create-matrix simple-matrix-in) simple-matrix-out))))
