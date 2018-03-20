@@ -21,8 +21,9 @@
 
 (defn print-matrix
   [coll matrix]
-  (print-row -1 coll)
-  (prn (sort (zipmap coll matrix))))
+  (print-row nil coll)
+  (doseq [i (range 0 (count coll))]
+    (print-row (get (vec coll) i) (get (vec matrix) i))))
 
 (defn -main
   [& args]
