@@ -3,13 +3,21 @@
 
 (def seed 1)
 
+(defn generator-range
+  [max]
+  (cons 2 (take-nth 2 (range seed max))))
+
 (defn prime?
-  [number]
-  (= 2 (count (filter #(= (mod number %) 0) (range seed (+ number 1))))))
+  [n]
+  (= 2 (count (filter #(= (mod n %) 0) (generator-range (inc n))))))
+
+(defn n-primes
+  [n]
+  (take n (filter prime? (generator-range Integer/MAX_VALUE))))
 
 (defn ten-primes
   []
-  (take 10 (filter prime? (range seed 1000))))
+  (n-primes 10))
 
 (defn create-matrix
   [coll]
